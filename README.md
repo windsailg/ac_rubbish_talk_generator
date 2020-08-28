@@ -12,6 +12,8 @@
 - Express: 4.17.1
 - Express-Handlebars: 5.1.0
 - nodemon: 2.0.4
+- bodyParser: 1.19.0
+
 
 ## 安裝
 1.開啟終端機(Terminal) cd 到存放專案本機位置並執行:
