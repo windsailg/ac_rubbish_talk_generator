@@ -10,13 +10,13 @@ app.engine('handlebars', exphbs({
 }))
 app.set('view engine', 'handlebars')
 app.use(bodyParser.urlencoded({extended: true}))
-app.get('/', (req , res) => {
+app.get('/', (req, res) => {
     res.render('index')
 })
 app.post('/', (req, res) => {
     const options = req.body
     const rubbishTalk = generatorRubbishTalk(req.body)
-    res.render('index', {rubbishTalk: rubbishTalk, options: options})
+    res.render('index', {rubbishTalk: rubbishTalk})
 })
 
 app.listen(port, () => {
