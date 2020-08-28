@@ -1,0 +1,78 @@
+<!--  ./views/index.handlebars -->
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="card-title text-center"> <i class="far fa-smile-beam"></i> 今天想對誰說幹話? <i class="fas fa-smile-beam"></i></h3>
+          <hr>
+          
+          <form method="POST" action="/">
+
+          <div class="card-deck" >
+
+            <div class="card" style="width: 12rem;">
+              <div class="img__box">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="...">
+              </div>
+              
+              <div class="card-body">
+                
+
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="target" value="engineer" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1"><h5 class="card-title">工程師</h5></label>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="card" style="width: 12rem;">
+              <div class="img__box">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top" alt="...">
+              </div>
+              
+              <div class="card-body">
+                
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="target" value="designer" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2"><h5 class="card-title">設計師</h5></label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card" style="width: 12rem;">
+              <div class="img__box">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top" alt="...">
+              </div>
+              
+              <div class="card-body">
+                
+              
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio3" name="target" value="entrepreneur" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3"><h5 class="card-title">創業家</h5></label>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+            <div class=" row form-group p-3">
+              <button class="btn btn-danger mr-3 col-sm-2 px-2" type="submit" rows="1">來段幹話吧！</button>
+              <textarea class="form-control col-sm-9 font-weight-bold"  id="exampleFormControlTextarea1" spellcheck="false" rows="1">{{#if rubbishTalk}}{{rubbishTalk}}{{/if}}</textarea>
+            </div>
+
+          </form>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
